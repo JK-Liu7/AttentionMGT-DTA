@@ -34,7 +34,7 @@ class DTIDataset(Dataset):
 
         compound_len = self.compound_graph[idx].num_nodes()
         protein_len = self.protein_graph[idx].num_nodes()
-        return self.compound_graph[idx], self.protein_graph[idx], compound_len, protein_len, self.label[idx]
+        return self.compound_graph[idx], self.protein_graph[idx], self.protein_embedding[idx], compound_len, protein_len, self.label[idx]
 
 
     def collate(self, sample):
