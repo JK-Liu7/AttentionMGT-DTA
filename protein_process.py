@@ -332,7 +332,7 @@ if __name__ == '__main__':
     os.makedirs(dir_output, exist_ok=True)
 
     raw_data_protein = pd.read_csv(file_path_protein)
-    protein_id_unique = raw_data_protein['PROTEIN ID'].values
+    protein_id_unique = raw_data_protein['PROTEIN_ID'].values
 
     N = len(protein_id_unique)
 
