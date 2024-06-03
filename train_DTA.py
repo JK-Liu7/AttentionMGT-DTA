@@ -58,7 +58,7 @@ def test(model, device, test_loader):
 if __name__ == '__main__':
 
     dataset = 'Davis'
-    file_path = 'data/' + dataset + '/processed/DTA/'
+    file_path = 'data/' + dataset + '/processed'
 
     fold = 1
     epochs = 1000
